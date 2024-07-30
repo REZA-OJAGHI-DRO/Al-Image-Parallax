@@ -1,0 +1,37 @@
+.imgAni1{
+    animation: Ani1 60s infinite;
+}
+.imgAni2{
+    animation: Ani2 60s infinite;
+    transform: translateX(-100%);
+}
+
+
+@keyframes Ani1{
+    0%{
+        transform: translateX(0%);
+    }
+    50%{
+        transform: translateX(100%);
+    }
+     50.000000000001%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    } 
+}
+@keyframes Ani2{
+    0%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(0%);
+    }
+     99.99999999999%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    } 
+}
