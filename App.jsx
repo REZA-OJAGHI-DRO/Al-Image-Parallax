@@ -6,7 +6,7 @@ import "./input.css";
 import "./output.css";
 import logo from "./assets/nav/ai-image-logo.svg";
 import { useState } from "react";
-
+import Nav from "./generalComponent/nav.jsx";
 function App() {
   const [styleSet, setStyleSet] = useState(false);
   const [openSearch, setOpenSearch] = useState(false);
@@ -17,28 +17,7 @@ function App() {
           <div className="w-[100%] h-[70px] fixed z-50 flex justify-center top-0">
           {/* menu */}
           <nav className="lg:flex w-[70%] h-[100%] hidden items-center justify-between ">
-            <ul className="h-[100%] w-[70%] flex items-center gap-5 *:text-[1rem] *:capitalize *:text-white">
-              <li>
-                <Link to="/">
-                  <img src={logo} alt="" />
-                </Link>
-              </li>
-              <li>
-                <Link to="/">home</Link>
-              </li>
-              <li>
-                <Link to="/about">features</Link>
-              </li>
-              <li>
-                <Link to="/">process</Link>
-              </li>
-              <li>
-                <Link to="/">pricing</Link>
-              </li>
-              <li>
-                <Link to="/">blog</Link>
-              </li>
-            </ul>
+           <Nav styleNav={'*:text-[1.2rem]'}/>
             <ul className="w-[50px] h-[100%] rounded-full flex justify-center items-center">
               <li
                 className="cursor-pointer"
@@ -96,7 +75,7 @@ function App() {
                   <Link to="/">home</Link>
                 </li>
                 <li>
-                  <Link to="/about">features</Link>
+                  <Link to="/features">features</Link>
                 </li>
                 <li>
                   <Link to="/">process</Link>
@@ -139,7 +118,7 @@ function App() {
           </div>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<Features />} />
+            <Route path="/features" element={<Features />} />
           </Routes>
         </div>
       </Router>

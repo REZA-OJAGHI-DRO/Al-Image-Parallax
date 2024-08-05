@@ -30,6 +30,28 @@
     animation: rotateBorder 4s infinite;
 }
 
+@keyframes rotateBorder {
+    0% {
+        transform: rotate(0deg);
+        left: 5%;
+    }
+    30% {
+        transform: rotate(0deg);
+        left: 85%;
+    }
+    50%{
+        left: 85%;
+        transform: rotate(180deg);
+    }
+    80%{
+        left: 5%;
+        transform: rotate(180deg);
+    }
+    100%{
+        left: 5%;
+        transform: rotate(360deg);
+    }
+}
 .button1:hover {
     transition: .4s;
     transform: scale(1.1);
@@ -166,28 +188,7 @@
     }
 }
 
-@keyframes rotateBorder {
-    0% {
-        transform: rotate(0deg);
-        left: 5%;
-    }
-    30% {
-        transform: rotate(0deg);
-        left: 85%;
-    }
-    50%{
-        left: 85%;
-        transform: rotate(180deg);
-    }
-    80%{
-        left: 5%;
-        transform: rotate(180deg);
-    }
-    100%{
-        left: 5%;
-        transform: rotate(360deg);
-    }
-}
+
 
 .h4-header1 {
     animation: h4-1 5s infinite;
