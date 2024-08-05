@@ -2,7 +2,7 @@ import React from 'react'
 import "../App.css";
 import img from '../assets/home/header/star-2.svg'
 import ImgRotate from './imgRotate';
-function textHover({text1 , text2}) {
+function TextHover({text1 , text2}) {
   return (
     <section className='w-[100%] flex justify-center'>
     <div className='w-full'>
@@ -39,4 +39,4 @@ function textHover({text1 , text2}) {
   )
 }
 
-export default textHover
+export default TextHover

@@ -1,7 +1,9 @@
 .input:focus{
     outline: none;
 }
-
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
 .PBorder{
     color: transparent;
     -webkit-text-stroke: 1px rgb(255, 255, 255); 

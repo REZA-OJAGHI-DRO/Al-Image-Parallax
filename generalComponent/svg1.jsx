@@ -1,6 +1,6 @@
 import React from 'react'
 
-function svg1({styleSvg}) {
+function Svg1({styleSvg}) {
   return (
     <>
             <div className={`${styleSvg}`}>
@@ -21,4 +21,4 @@ function svg1({styleSvg}) {
   )
 }
 
-export default svg1
+export default Svg1

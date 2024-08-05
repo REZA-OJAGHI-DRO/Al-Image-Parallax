@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Button from "../../generalComponent/button1";
 import Svg from "../../generalComponent/svg1";
 import ImgRotate from "../../generalComponent/imgRotate";
